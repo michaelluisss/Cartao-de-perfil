@@ -1,41 +1,30 @@
-.b{
+.body{
     color: #e3e3e3;
     background-color: #1e1f20 ;
     font-style: normal;
     font-family:Arial, Helvetica, sans-serif ;
     margin-top: 100px;
 }
+#foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    
+}
 .contents{
 
     display: flex;
- 
-
- 
     align-items: flex-start;
     justify-content: space-around;
     margin-inline: 90px;
-
-    
     padding-bottom: 48px;
     padding-top: 48px;
     padding-block-end: 48px;
-   
-
-
     background-color: #0e0e0e ;
  
-
-
-    
-    
-
 }
-
 #c2{
-    
-    
     margin: 9px;
-    
 }
 #b2{
     display: block;
@@ -54,14 +43,11 @@
 
 #div1{
     display: flex;
-    text-align: center;
+    text-align: center;    
     height: 200px;
     width: 400px;
-  
-   
     margin-inline: 30px;
 
-    
 }
 
 #div2{
@@ -101,21 +87,10 @@
 #footer{
     display: flex;
     flex-direction: column;
-    align-items: ;
-    
-
     margin: 2px;
-
-    background-color: #171717
-    ;
-   
-
+    background-color: #171717;
   margin-inline: 90px;
     font-size: 30px;
-    
-    
-    
-
 }
 #icon{
     width: 17px;
@@ -129,3 +104,41 @@
     transition: background-color 0.3s ease;
 }
 
+@media (max-width: 1024px) {
+    .contents {
+        margin-inline: 15%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #footer{
+    display: flex;
+    flex-direction: column;
+    
+    
+
+    margin: 2px;
+
+    background-color: #171717;
+
+    margin-inline: 15%;
+    font-size: 30px;
+}
+
+}
+
+@media (max-width: 768px) {
+    .contents {
+        flex-direction: column;
+        align-items: center;
+        margin-inline: 15%;
+    }
+    #div1{
+    display: flex;
+    text-align: center;    
+    height: 150px;
+    width: 100px;
+    margin-inline: 10%;
+    font-size: 70%;
+
+}
+}
