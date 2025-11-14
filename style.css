@@ -35,21 +35,17 @@
 #icone { width: 20px; height: 20px; }
 #bio-info { height: 200px; width: 900px; }
 .botao { width: 10px; height: 10px;}
-.instagram { width: 200px; height: 50px; }
+.rede-socias { width: 200px; height: 50px; }
 
 /*=== MARGENS ===*/
 .conteudo { 
-  margin-inline: 1%; 
-  padding-bottom: 48px; 
-  padding-top: 4px; 
-  padding-block-end: 48px; 
-}
-
+  margin-inline: 1%;  padding-bottom: 48px;  padding-top: 4px; padding-block-end: 48px; }
 #bio-info { margin-inline: 3px; }
-.botao { margin-top: 15px; margin-left: 10%;padding: 5px; }
+.botao { margin-top: 15px; margin-left: 10%;padding: 10px; }
 #rodape { margin: 2px; margin-inline: 9px; }
 
 /*=== CORES ===*/
+#navbar{background-color: #3f57af;}
 #rodape { background-color: #E9ECEF; }
 .botao { background-color: #3f57af; color: #e3e3e3; }
 
@@ -60,7 +56,7 @@
 .botao { border-radius: 5px; }
 
 /*=== TRANSIÇÕES ===*/
-.botao, .instagram { transition: background-color 0.3s ease; }
+.botao, .rede-socias { transition: background-color 0.3s ease; }
 
 /*=== HOVER ===*/
 .botao:hover { background-color: #2c2c2c; }
