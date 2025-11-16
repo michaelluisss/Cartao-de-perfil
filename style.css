@@ -18,6 +18,14 @@
   justify-content: space-around; 
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.menu {
+  justify-content: end;
+}
 #bio-info { 
   display: flex; 
   text-align: center; 
@@ -25,13 +33,17 @@
 
 #rodape { 
   display: flex; 
-  flex-direction: column; 
+  flex-direction: column;
+  
+}
+.botao{
+  text-decoration: none; 
 }
 
 #contatos { margin-left: 10px; }
 
 /*=== TAMANHOS ===*/
-#foto, #perfil-foto { width: 100px; height: 100px; }
+#foto, #perfil-foto { width: 50px; height: 50px; }
 #icone { width: 20px; height: 20px; }
 #bio-info { height: 200px; width: 900px; }
 .botao { width: 10px; height: 10px;}
@@ -45,16 +57,18 @@
 #rodape { margin: 2px; margin-inline: 9px; }
 
 /*=== CORES ===*/
-#navbar{background-color: #3f57af;}
-#rodape { background-color: #E9ECEF; }
-.botao { background-color: #3f57af; color: #e3e3e3; }
+#navbar{background-color: #f1f1f1;}
+#rodape { background-color: #e9ecef; }
+.botao { background-color: #455fc0; color: #e3e3e3; }
 
 /*=== BORDAS ===*/
 .conteudo { border-radius: 1px; }
 #foto { border-radius: 30%; }
 #perfil-foto { border-radius: 100px; box-shadow: 0 1px 1px rgba(61, 1, 1, 0.3); }
 .botao { border-radius: 5px; }
-
+#navbar{
+  border:none
+}
 /*=== TRANSIÇÕES ===*/
 .botao, .rede-socias { transition: background-color 0.3s ease; }
 
