@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contatos | Michael Dev</title>
+    <script defer src="app.js"></script>
+    <style>
+      /* Estilos específicos para a página de contatos */
+      .contatos-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      .contatos-hero {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .contatos-hero h1 {
+        color: #0A2463;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
+
+      .contatos-hero p {
+        color: #1A1A2E;
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .contatos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+      }
+
+      .contato-card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+      }
+
+      .contato-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      .contato-card img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+      }
+
+      .contato-card h3 {
+        color: #0A2463;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+      }
+
+      .contato-card p {
+        color: #1A1A2E;
+        margin-bottom: 20px;
+        font-size: 0.95rem;
+      }
+
+      .contato-card .botao {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 24px;
+        margin: 0;
+        width: auto;
+        height: auto;
+        background-color: #0264b4;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      .contato-card .botao:hover {
+        background-color: #0A2463;
+      }
+
+      .contato-card .botao img {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+      }
+
+
+
+      @media (max-width: 750px) {
+        .contatos-hero h1 {
+          font-size: 2rem;
+        }
+
+        .contatos-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="corpo">
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html"><img id="foto" src="./images/foto.png" alt="Michael Dev" /></a>
+        <button class="hamburguer"></button>
+        <ul class="nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="contatos.html">Contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="contatos-container">
+      <!-- Hero Section -->
+      <div class="contatos-hero">
+        <h1>📬 Entre em Contato</h1>
+        <p>
+          Estou sempre aberto a novas oportunidades e conversas! Escolha a melhor forma de me contatar abaixo.
+        </p>
+      </div>
+
+      <!-- Cards de Contato -->
+      <div class="contatos-grid">
+        <div class="contato-card">
+          <img src="./images/gmail.png" alt="Gmail" />
+          <h3>E-mail</h3>
+          <p>Mande um e-mail direto para mim</p>
+          <a href="mailto:ldmichael838@gmail.com" class="botao">
+            <img src="./images/gmail.png" alt="" />
+            Enviar E-mail
+          </a>
+        </div>
+
+        <div class="contato-card">
+          <img src="./images/instagram.png" alt="Instagram" />
+          <h3>Instagram</h3>
+          <p>Me siga e mande uma DM</p>
+          <a href="https://www.instagram.com/m1_luiss/" target="_blank" class="botao">
+            <img src="./images/instagram.png" alt="" />
+            Ver Perfil
+          </a>
+        </div>
+
+        <div class="contato-card">
+          <img src="./images/github.png" alt="GitHub" />
+          <h3>GitHub</h3>
+          <p>Confira meus projetos e código</p>
+          <a href="https://github.com/michaelluisss/" target="_blank" class="botao">
+            <img src="./images/github.png" alt="" />
+            Ver GitHub
+          </a>
+        </div>
+
+        <div class="contato-card">
+          <img src="./images/Linkerdin.png" alt="LinkedIn" />
+          <h3>LinkedIn</h3>
+          <p>Conecte-se profissionalmente</p>
+          <a href="https://www.linkedin.com/" target="_blank" class="botao">
+            <img src="./images/Linkerdin.png" alt="" />
+            Conectar
+          </a>
+        </div>
+      </div>
+
+
+
+    <footer id="rodape">
+      <p id="contatos">Contatos</p>
+      <div class="rede-socias">
+        <a class="botao" href="mailto:ldmichael838@gmail.com">
+          <img id="icone" src="./images/gmail.png" alt="" />
+          Gmail
+        </a>
+      </div>
+      <div class="rede-socias">
+        <a class="botao" href="https://www.instagram.com/m1_luiss/" target="_blank">
+          <img id="icone" src="./images/instagram.png" alt="" />
+          Instagram
+        </a>
+      </div>
+      <div class="rede-socias">
+        <a class="botao" href="https://github.com/michaelluisss/" target="_blank">
+          <img id="icone" src="./images/github.png" alt="" />
+          Github
+        </a>
+      </div>
+      <div class="rede-socias">
+        <a class="botao" href="https://www.linkedin.com/" target="_blank">
+          <img id="icone" src="./images/Linkerdin.png" alt="" />
+          LinkedIn
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
