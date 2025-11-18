@@ -9,6 +9,7 @@
 #rodape { font-size: 30px; }
 #perfil-foto { font-size: 16px; line-height: 1.6; }
 .botao { font-size: 16px; }
+.link-projetos{font-size: 20px;}
 
 /*=== ALINHAMENTO ===*/
 *{
@@ -174,6 +175,8 @@ a{
 #bio-info { height: 200px; width: 500px; }
 .botao { width: 10px; height: 10px;}
 .rede-socias { width: 200px; height: 50px; }
+.conteudo {  height: 400px; }
+
 
 /*=== MARGENS ===*/
 .conteudo { 
